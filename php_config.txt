@@ -1,0 +1,28 @@
+public class FactorialCalculator {
+    public static Integer calculateFactorial(Integer num) {
+        if (num < 0) {
+            return null; 
+        }
+        
+        Integer result = 1;
+        
+        for (Integer i = 2; i <= num; i++) {
+            result *= i;
+        }
+        
+        return result;
+    }
+}
+
+
+
+//for execute
+
+Integer num = 5;
+Integer factorial = FactorialCalculator.calculateFactorial(num);
+System.debug('Factorial of ' + num + ' is ' + factorial);
+
+
+
+
+
